@@ -100,6 +100,12 @@
           margin: 0 20px;
         }
       }
+
+      @media(max-width: 768px) {
+        .col1, .col2, .col3 {
+          margin-top: 30px;
+        }
+      }
       </style>
   </head>
   <body>
