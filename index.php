@@ -99,10 +99,10 @@
         <div class="col-sm-6 col1">
           <form  action="index.php" method="post">
             <div class="form-group form">
-              <input type="text" name="name" class="form-control" placeholder="Enter the name">
+              <input type="text" name="name" required class="form-control" placeholder="Enter the name">
               <br>
               <br>
-              <input type="text" name="motivational" class="form-control" placeholder="Ask anything">
+              <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
               <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
             </div>
 
@@ -120,10 +120,20 @@
                 if (isset($_POST["submit"])) {
                   include 'connection.php';
 
-                  $sql = "INSERT INTO userdetail(name, motivational)
-                  VALUES('".$_POST['name']."', '".$_POST["motivational"]."')";
+                  $name = $_POST["name"];
+                  $motivational = $_POST["motivational"];
 
-                  mysqli_query($connection, $sql);
+
+
+                  if (strlen($name) > 0 && strlen($motivational) > 3) {
+
+
+                    $sql = "INSERT INTO userdetail(name, motivational)
+                    VALUES('".$_POST['name']."', '".$_POST["motivational"]."')";
+                    mysqli_query($connection, $sql);                  
+                  }
+
+
 
               }
                                 include "connection.php";
