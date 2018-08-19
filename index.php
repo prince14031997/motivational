@@ -140,18 +140,27 @@
                 if (isset($_POST["submit"])) {
                   include 'connection.php';
 
+                  $array = ["madarchod", "bhosdike", "mc", "bc", "chutiye", "chutiya"
+                  ,"teri maa ka bhosda", "teri maa ki chut", "teri maa chodungha teri",
+                  "fuck off", "fuck", "what the fuck"
+                ];
                   $name = $_POST["name"];
                   $motivational = $_POST["motivational"];
 
+                  if (in_array(strtolower($name), $array) || in_array(strtolower($motivational), $array)) {
+                    echo "Dont use Bad Words";
+                  } else {
 
 
-                  if (strlen($name) > 0 && strlen($motivational) > 3) {
+                                      if (strlen($name) > 0 && strlen($motivational) > 3) {
 
 
-                    $sql = "INSERT INTO userdetail(name, motivational)
-                    VALUES('".$_POST['name']."', '".$_POST["motivational"]."')";
-                    mysqli_query($connection, $sql);
+                                        $sql = "INSERT INTO userdetail(name, motivational)
+                                        VALUES('".$_POST['name']."', '".$_POST["motivational"]."')";
+                                        mysqli_query($connection, $sql);
+                                      }
                   }
+
 
 
 
