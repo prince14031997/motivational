@@ -21,6 +21,7 @@
         background: dodgerblue;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 40px;
       }
       .form{
         padding : 20px;
@@ -86,6 +87,7 @@
       .card-body1{
         background-color: white;
       }
+
 
       .col3{
         margin-left: auto;
