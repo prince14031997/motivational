@@ -8,8 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Permanent+Marker" rel="stylesheet">
     </script>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <style media="screen">
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
       .col1{
         background: dodgerblue;
@@ -88,6 +94,12 @@
         padding-left: 0;
         padding-right: 0;
       }
+
+      @media(max-width: 575px) {
+        .col1, .col2, .col3 {
+          margin: 0 20px;
+        }
+      }
       </style>
   </head>
   <body>
@@ -130,7 +142,7 @@
 
                     $sql = "INSERT INTO userdetail(name, motivational)
                     VALUES('".$_POST['name']."', '".$_POST["motivational"]."')";
-                    mysqli_query($connection, $sql);                  
+                    mysqli_query($connection, $sql);
                   }
 
 
