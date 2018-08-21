@@ -103,9 +103,6 @@
         }
       }
 
-      .col4{
-        margin-top: 0;
-      }
       </style>
   </head>
   <body>
@@ -116,7 +113,7 @@
       <div class="row">
         <div class="col-sm-6 col3">
           <div class="card">
-            <img class="card-img-top" src="laptop.jpg" alt="Card image">
+            <img class="card-img-top" src="rathore.jpg" alt="Card image">
                <div class="card-body">
                  <h4 class="card-title">Prince Rathore</h4>
                  <p class="card-text">Prince Rathore  is programmer and software Engineer</p>
@@ -125,6 +122,43 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col3">
+          <div class="card">
+            <img class="card-img-top" src="laptop.jpg" alt="Card image">
+               <div class="card-body">
+                 <h4 class="card-title">Programming</h4>
+                 <p class="card-text">Computer programming is super power if you know this you do anything </p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col3">
+          <div class="card">
+            <img class="card-img-top" src="motivation.jpg" alt="Card image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col3">
+          <div class="card">
+            <img class="card-img-top" src="motivation1.jpg" alt="Card image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container">
       <div class="row">
@@ -155,11 +189,6 @@
                                         mysqli_query($connection, $sql);
                                       }
                   }
-                  if(isset($_POST['delete'])){
-                        include 'connection.php';
-                        $query = "DELETE FROM userdetail";
-                        mysqli_query($connection, $query);
-                  }
 
                   include "connection.php";
                   $sql1 = 'SELECT * FROM userdetail';
@@ -174,6 +203,7 @@
                         echo "<hr/>";
                     }
                   }
+
               }
 
 
@@ -193,19 +223,6 @@
                 <br>
                 <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
                 <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col4 col1">
-            <form  action="index.php" method="post">
-              <div class="form-group form">
-
-                <button type="submit" name="delete" id="button2" class="btn btn-secondary btn-lg btn-block">Delete Everything</button>
               </div>
 
             </form>
