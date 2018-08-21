@@ -116,21 +116,18 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col1">
-          <form  action="index.php" method="post">
-            <div class="form-group form">
-              <input type="text" name="name" required class="form-control" placeholder="Enter the name">
-              <br>
-              <br>
-              <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
-              <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
-            </div>
-
-          </form>
+        <div class="col-sm-6 col3">
+          <div class="card">
+            <img class="card-img-top" src="laptop.jpg" alt="Card image">
+               <div class="card-body">
+                 <h4 class="card-title">Prince Rathore</h4>
+                 <p class="card-text">Prince Rathore  is programmer and software Engineer</p>
+           </div>
+          </div>
         </div>
       </div>
     </div>
-
+  
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col2">
@@ -186,17 +183,21 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col3">
-            <div class="card">
-              <img class="card-img-top" src="laptop.jpg" alt="Card image">
-                 <div class="card-body">
-                   <h4 class="card-title">Prince Rathore</h4>
-                   <p class="card-text">Prince Rathore  is programmer and software Engineer</p>
-             </div>
-            </div>
+          <div class="col-sm-6 col1">
+            <form  action="index.php" method="post">
+              <div class="form-group form">
+                <input type="text" name="name" required class="form-control" placeholder="Enter the name">
+                <br>
+                <br>
+                <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
+                <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
+              </div>
+
+            </form>
           </div>
         </div>
       </div>
+
     <footer>
       <h2 class="down">CREATED BY PRINCE RATHORE</h2>
     </footer>
