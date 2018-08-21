@@ -230,6 +230,20 @@
         </div>
       </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col3">
+            <div class="card">
+              <img class="card-img-top" src="rathore.jpg" alt="Card image">
+                 <div class="card-body">
+                   <h4 class="card-title">Prince Rathore</h4>
+                   <p class="card-text">Prince Rathore  is programmer and software Engineer</p>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer>
       <h2 class="down">CREATED BY PRINCE RATHORE</h2>
     </footer>
