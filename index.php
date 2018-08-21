@@ -115,7 +115,7 @@
       <div class="row">
         <div class="col-sm-6 col3">
           <div class="card">
-            <img class="card-img-top" src="laptop.jpg" alt="Card image">
+            <img class="card-img-top" src="images/code1.jpg" alt="Card image">
                <div class="card-body">
                  <h4 class="card-title">Programming</h4>
                  <p class="card-text">Computer programming is super power if you know this you do anything </p>
@@ -124,29 +124,6 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col3">
-          <div class="card">
-            <img class="card-img-top" src="motivation.jpg" alt="Card image">
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col3">
-          <div class="card">
-            <img class="card-img-top" src="motivation1.jpg" alt="Card image">
-
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <div class="container">
       <div class="row">
@@ -209,7 +186,7 @@
                 <input type="text" name="name" required class="form-control" placeholder="Enter the name">
                 <br>
                 <br>
-                <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
+                <input type="text" name="motivational" required class="form-control" placeholder="Enter thought">
                 <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
               </div>
 
@@ -218,20 +195,19 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col3">
-            <div class="card">
-
-                 <div class="card-body">
-                   <h4 class="card-title">Prince Rathore</h4>
-                   <p class="card-text">Prince Rathore  is programmer and software Engineer</p>
-             </div>
-               <img class="card-img-bottom"src="rathore.jpg" alt="Card image">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col3">
+                <div class="card">
+                  <img class="card-img-top" src="images/code2.jpg" alt="Card image">
+                     <div class="card-body">
+                       <h4 class="card-title">PRINCE RATHORE</h4>
+                       <p class="card-text">Prince rathore is a programmer and software engineer......</p>
+                 </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
     <footer>
       <h2 class="down">CREATED BY PRINCE RATHORE</h2>
