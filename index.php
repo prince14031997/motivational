@@ -97,16 +97,14 @@
         padding-right: 0;
       }
 
-      @media(max-width: 575px) {
-        .col1, .col2, .col3 {
-          margin: 0 20px;
-        }
-      }
-
       @media(max-width: 768px) {
         .col1, .col2, .col3 {
           margin-top: 30px;
         }
+      }
+
+      .col4{
+        margin-top: 0;
       }
       </style>
   </head>
@@ -127,7 +125,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col2">
@@ -157,24 +155,28 @@
                                         mysqli_query($connection, $sql);
                                       }
                   }
+                  if(isset($_POST['delete'])){
+                        include 'connection.php';
+                        $query = "DELETE FROM userdetail";
+                        mysqli_query($connection, $query);
+                  }
 
+                  include "connection.php";
+                  $sql1 = 'SELECT * FROM userdetail';
+                  $result = mysqli_query($connection, $sql1);
 
-
-
+                  if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                      echo "<br>";
+                        echo "<p>".$row["motivational"]."</p>";
+                        echo "<br>";
+                        echo "<h3>".$row["name"]."</h3>";
+                        echo "<hr/>";
+                    }
+                  }
               }
-                                include "connection.php";
-                                $sql1 = 'SELECT * FROM userdetail';
-                                $result = mysqli_query($connection, $sql1);
 
-                                if (mysqli_num_rows($result) > 0) {
-                                  while ($row = mysqli_fetch_assoc($result)) {
-                                    echo "<br>";
-                                      echo "<p>".$row["motivational"]."</p>";
-                                      echo "<br>";
-                                      echo "<h3>".$row["name"]."</h3>";
-                                      echo "<hr/>";
-                                  }
-                                }
+
                  ?>
              </div>
          </div>
@@ -191,6 +193,19 @@
                 <br>
                 <input type="text" name="motivational" required class="form-control" placeholder="Ask anything">
                 <button type="submit" name="submit" id="button" class="btn btn-secondary btn-lg btn-block">Send</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col4 col1">
+            <form  action="index.php" method="post">
+              <div class="form-group form">
+
+                <button type="submit" name="delete" id="button2" class="btn btn-secondary btn-lg btn-block">Delete Everything</button>
               </div>
 
             </form>
