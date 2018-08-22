@@ -1,14 +1,15 @@
-<?php
+<?php  
+$serverName = "localhost";
+$userName = "root";
+$password = "";
+$dbName = "motivation";
 
-$serverName = "sql12.freemysqlhosting.net";
-$username = "sql12252643";
-$password = "NScb87CJcD";
-$dbname = "sql12252643";
+$connection = mysqli_connect($serverName, $userName, $password, $dbName);
 
-//create connection
-$connection = mysqli_connect($serverName, $username, $password, $dbname);
-
-if (mysqli_connect_error()) {
-  echo "database is not connected";
-}
- ?>
+// if(!$connection){
+//     echo "database is not connected";
+// }
+// else{
+//     echo "database connected";
+// }
+// ?>
